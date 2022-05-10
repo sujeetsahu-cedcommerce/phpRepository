@@ -21,6 +21,25 @@
     foreach($item as $y){
         echo $y." ";
     }
+
+    // Write a PHP script to calculate and display average temperature, five lowest and highest temperatures.
+    echo "<br>";
+    $temp = array(78,60,62,68,71,68,73,85,66,64,76,63,75,76,73,68,62,73,72,65,74,62,62,65,64,68,73,75,79,73);
+    $sum=array_sum($temp);
+    echo "<br>Average Temperature is : ".number_format($sum/count($temp),1);
+    $unique =array_unique($temp);
+    sort($unique);
+    echo "<br> List of five lowest temperatures :";
+    for($i=0; $i<5; $i++){
+        echo $unique[$i]." ";
+    }
+    echo "<br> List of five highest temperatures :";
+    $u = array_slice($unique,-5,5);
+    for($i=0; $i<5; $i++){
+        echo $u[$i]." ";
+    }
+    
+
     ?>
 </body>
 </html>
