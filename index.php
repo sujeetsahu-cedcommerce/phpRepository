@@ -9,7 +9,6 @@ i<!DOCTYPE html>
 <body>
 <?php
 
-// Write a Program to display count, from 5 to 15 using PHP loop as given below.
 for($i=1 ;$i<=15; $i++)
 {
     echo $i."<br>";
