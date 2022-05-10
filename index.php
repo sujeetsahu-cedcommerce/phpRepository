@@ -80,6 +80,15 @@ switch($day)
 }
 
 
+// Write a program to calculate factorial of a number using for loop in php.
+
+$fact=5;
+for($i=1; $i<5; $i++){
+    $fact*=$i;
+}
+echo $fact."<br>";
+?>
+
 
 
 ?>
