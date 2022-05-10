@@ -39,8 +39,7 @@
         echo $u[$i]." ";
     }
     
-    // Write a PHP program to filter out some elements with certain key-names.
-     
+    
     $array1 =array("c1"=>"Red","c2"=>"Green","c3"=>"White","c4"=>"Black");
     $array2 =array("c2","c4");
 
