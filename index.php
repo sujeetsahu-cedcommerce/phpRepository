@@ -25,6 +25,13 @@ echo $sum= $num1+$num2."<br>";
 $x="to the PhP";
 echo "welcome". $x ." "."World"."<br>";
 
+// Write a program to print 2 php variables using single echo statement.
+
+$first ="hello";
+$second ="sujeet";
+echo $first." ".$second."<br>";
+
+
 
 
 
