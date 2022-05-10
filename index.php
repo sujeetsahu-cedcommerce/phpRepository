@@ -31,6 +31,21 @@ $first ="hello";
 $second ="sujeet";
 echo $first." ".$second."<br>";
 
+// Write a program to check student grade based on the marks using if-else statement.
+
+$marks =rand(1,100);
+if($marks >=60){
+    echo "first Division"."<br>";
+}
+elseif($marks>=45 && $marks<=59){
+    echo "second division"."<br>";
+}
+elseif($marks>=33 && $marks<=44){
+    echo "third division"."<br>";
+}
+else{
+    echo "fail"."<br>";
+}
 
 ?>
 </body>
