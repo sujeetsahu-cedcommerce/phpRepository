@@ -20,6 +20,10 @@ $num1=10;
 $num2=20;
 echo $sum= $num1+$num2."<br>";
 
+// Write a program to print “Welcome to the PHP World” using some part of the text in variable & some part directly in echo.
+
+$x="to the PhP";
+echo "welcome". $x ." "."World"."<br>";
 
 
 
