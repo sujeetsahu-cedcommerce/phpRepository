@@ -77,6 +77,15 @@ else{
             echo "you have entered a wrong number please enter between 1 to 7"."<br>";
     }
     
+// Write a program to calculate factorial of a number using for loop in php.
+
+$fact=5;
+for($i=1; $i<5; $i++){
+    $fact*=$i;
+}
+echo $fact."<br>";
+?>
+
 
 
 ?>
