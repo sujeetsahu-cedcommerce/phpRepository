@@ -45,7 +45,20 @@
 
     $result = array_diff_key($array1,array_flip($array2));
     print_r($result);
+    
 
+     // Write a PHP script to delete a specific value from an array using array_filter() function.
+     $a1=array(1,2,3,4,5);
+     function delete($d){
+         if($d==4){
+             return false;
+         }
+         else{
+             return true;
+         }
+     }
+     echo "<br>";
+     print_r(array_filter($a1,"delete"));
     ?>
 </body>
 </html>
