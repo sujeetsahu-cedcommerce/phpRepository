@@ -47,6 +47,38 @@ else{
     echo "fail"."<br>";
 }
 
+{// Write a program to show day of the week (for example: Monday) based on numbers using switch/case statements.
+
+    $day=7;
+    switch($day)
+    {
+        case 1:
+            echo "Monday"."<br>";
+            break;
+        case 2:
+            echo "tuesday"."<br>";
+            break;
+        case 3:
+            echo "wednesday"."<br>";
+            break;
+        case 4:
+            echo "thursday"."<br>";
+            break;
+        case 5:
+            echo "friday"."<br>";
+            break;
+        case 6:
+            echo "saturday"."<br>";
+            break;
+        case 7:
+            echo "sunday"."<br>";
+            break;
+        default:
+            echo "you have entered a wrong number please enter between 1 to 7"."<br>";
+    }
+    
+
+
 ?>
 </body>
 </html>
