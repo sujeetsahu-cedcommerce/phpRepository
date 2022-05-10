@@ -19,6 +19,13 @@ for($i=5 ;$i<=15; $i++)
 $num1=10;
 $num2=20;
 echo $sum= $num1+$num2."<br>";
+
+// Write a program to print “Welcome to the PHP World” using some part of the text in variable & some part directly in echo.
+
+$x="to the PHP";
+echo "Welcome". $x ." "."World"."<br>";
+
+
 ?>
 </body>
 </html>
