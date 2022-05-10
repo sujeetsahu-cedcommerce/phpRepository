@@ -84,9 +84,28 @@ for($i=1; $i<5; $i++){
     $fact*=$i;
 }
 echo $fact."<br>";
-?>
 
-
+//Write a PHP program using nested for loop that creates a chess board. 
+ echo "<table width = '400px'>";
+for($i=1;$i<=8;$i++)
+{
+    echo "<tr>";
+    for($j=1;$j<=8;$j++)
+    {
+        
+        if(($i+$j)%2==0)
+        {
+           echo "<td >";
+        }
+        
+        else
+        {
+           echo "<td >";
+        }
+    }
+    echo "</tr>";
+}
+echo "</table>"
 
 ?>
 </body>
