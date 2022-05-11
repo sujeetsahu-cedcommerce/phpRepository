@@ -47,7 +47,7 @@ else{
     echo "fail"."<br>";
 }
 
-{// Write a program to show day of the week (for example: Monday) based on numbers using switch/case statements.
+// Write a program to show day of the week (for example: Monday) based on numbers using switch/case statements.
 
     $day=7;
     switch($day)
@@ -86,7 +86,7 @@ for($i=1; $i<5; $i++){
 echo $fact."<br>";
 
 //Write a PHP program using nested for loop that creates a chess board. 
- echo "<table width = '400px'>";
+ echo "<table width = '400px' border=1px>";
 for($i=1;$i<=8;$i++)
 {
     echo "<tr>";
@@ -95,12 +95,12 @@ for($i=1;$i<=8;$i++)
         
         if(($i+$j)%2==0)
         {
-           echo "<td >";
+           echo "<td height=30px width=30px bgcolor=white>";
         }
         
         else
         {
-           echo "<td >";
+           echo "<td height=30px width=30px bgcolor=black>";
         }
     }
     echo "</tr>";
