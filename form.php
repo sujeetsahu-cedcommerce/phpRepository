@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electricity-Bill</title>
     <style>
+        
         .adjust
         {
            margin:10px; 
@@ -115,7 +116,7 @@
      ?>
 
      
-     <form action="form.php" method="post">
+     <!-- <form action="form.php" method="post">
          length of rectangle <input type="text" name="length" id="LEN">mtr<br>
          width of rectangle  <input type="text" name="width"  id="WID">mtr<br>
          <input type="submit" value="Calculate Area & Perimeter" id="cal"><br>
@@ -125,12 +126,47 @@
          <div><p></p>
              <p></p>
         </div>
-     </form>
+     </form> -->
 
-     
-     
-   
+
+      
+
+     <?php
+     $hr=$_POST['hour'];
+     $button=$_POST['btn'];
+     $convert;
+     switch($button){
+         case'minute':
+            $convert = 60*$hr;
+         
+            break;
+         case'second':
+            $convert =60*60*$hr;
+          
+            break;
+        default:
+            echo "";
+
+     }
+     ?>
+<div style="padding-left:30%;padding-top:15%">
+     <form action="form.php" method="post">
+         <div ><input type="text" name="hour" style=" margin-left:20%;height:10%"></div><br><br><br>
+         <input type="radio" value="minute" name='btn' style=" margin-left:20%">hours to mins <br>
+         <input type="radio" value="second" name='btn' style=" margin-left:20%">hours to sec  <br><br><br><br>
+         <div style=" margin-left:20%;" ><?php echo $convert;?></div>
+         <input type="submit" value="convert" style=" margin-left:20%;margin-top:6%">
+    </form>
+    </div>
     
+
+     <?php
+     
+     ?>
+    
+    
+
+
 </body>
 </html>
 
