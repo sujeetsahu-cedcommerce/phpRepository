@@ -10,6 +10,15 @@
         {
            margin:10px; 
         }
+       #btn
+        {
+            margin-top:2%;
+            margin-left:7%;
+        }
+        #res{
+            margin-left:2.7%;
+        }
+        
     </style>
 </head>
 <body>
@@ -78,11 +87,11 @@
     <form action="form.php" method="post">
         number1:<input type="text" name="number1" class="adjust" ><br>
         number2:<input type="text" name="number2" class="adjust" ><br>
-        result :<input type="text" name="result"  class="adjust" value="<?php echo $result;?>"><br>
-        <input type="submit" value="+" name="button" class="operator">
+        result :<input type="text" name="result"  id="res" value="<?php echo $result;?>"><br>
+        <div id="btn"><input type="submit" value="+" name="button" class="operator">
         <input type="submit" value="-" name="button" class="operator">
         <input type="submit" value="*" name="button" class="operator">
-        <input type="submit" value="/" name="button" class="operator">
+        <input type="submit" value="/" name="button" class="operator"></div>
     </form>
 </body>
 </html>
