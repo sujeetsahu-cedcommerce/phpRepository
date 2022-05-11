@@ -18,6 +18,17 @@
         #res{
             margin-left:2.7%;
         }
+        #LEN{
+            margin-left:2%;
+        }
+        #WID{
+            margin-left:2.3%;
+        }
+        #cal{
+            margin-top:2%;
+            margin-left:14.2%;
+        }
+        
         
     </style>
 </head>
@@ -84,7 +95,7 @@
     }
    
     ?>  
-    <form action="form.php" method="post">
+    <!-- <form action="form.php" method="post">
         number1:<input type="text" name="number1" class="adjust" ><br>
         number2:<input type="text" name="number2" class="adjust" ><br>
         result :<input type="text" name="result"  id="res" value="<?php echo $result;?>"><br>
@@ -93,5 +104,33 @@
         <input type="submit" value="*" name="button" class="operator">
         <input type="submit" value="/" name="button" class="operator"></div>
     </form>
+     -->
+     <?php
+     
+     $l = $_POST['length'];
+     $w = $_POST['width'];
+     $area = $l*$w;
+     $perimeter = 2*($l+$w);
+     
+     ?>
+
+     
+     <form action="form.php" method="post">
+         length of rectangle <input type="text" name="length" id="LEN">mtr<br>
+         width of rectangle  <input type="text" name="width"  id="WID">mtr<br>
+         <input type="submit" value="Calculate Area & Perimeter" id="cal"><br>
+         Area of rectangle  <input type="text" name="area" value="<?php echo $area?>">mtr<br>
+         
+         perimeter of rectangle  <input type="text" name="area" value="<?php echo $perimeter?>">mtr<br>
+         <div><p></p>
+             <p></p>
+        </div>
+     </form>
+
+     
+     
+   
+    
 </body>
 </html>
+
