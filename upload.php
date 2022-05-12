@@ -46,4 +46,10 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
 }
+
+
+session_start();
+$_SESSION['images']="";
+
+
 ?>
